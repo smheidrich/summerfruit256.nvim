@@ -23,6 +23,9 @@ if version > 580
 endif
 let g:colors_name="summerfruit256"
 
+" neovim: Restore old vim definitions first, because we rely on them
+runtime colors/vim.lua
+
 if has("gui_running") || &t_Co == 88 || &t_Co == 256
     " functions {{{
     " returns an approximate grey index for the given grey level
