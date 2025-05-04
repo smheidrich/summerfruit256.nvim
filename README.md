@@ -39,6 +39,17 @@ After that, it should go back to looking like this:
 
 ![Visual selection with syntax highlighting](https://github.com/user-attachments/assets/53879448-be7f-4a47-90d0-1975c8919bb5)
 
+### Tabline is all messed up
+
+NeoVim 0.11 introduced a [change](https://github.com/neovim/neovim/pull/29976)
+to `TabLine` color behavior that messes up tab line colors.
+
+This doesn't really have anything to do with this theme because it doesn't even
+set the tabline colors, but anyway:
+
+[The fix](https://www.reddit.com/r/neovim/comments/1k1ws9g) is to do
+`highlight TabLineFill cterm=nocombine gui=nocombine`.
+
 # Original README of the summerfruit256.vim repo
 
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=2577
